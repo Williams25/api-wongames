@@ -16,12 +16,14 @@ function LeftMenuFooter({ version }) {
   return (
     <Wrapper>
       <div className="poweredBy">
+        Powered by
         <A
           key="website"
           href="https://strapi.io"
           target="_blank"
           rel="noopener noreferrer"
         >
+          {" "}
           Won - Games
         </A>
       </div>
