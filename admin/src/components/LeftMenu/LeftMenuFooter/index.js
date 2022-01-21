@@ -24,7 +24,7 @@ function LeftMenuFooter({ version }) {
           rel="noopener noreferrer"
         >
           {" "}
-          Won - Games
+          Won Games
         </A>
       </div>
     </Wrapper>
