@@ -5,7 +5,13 @@
  * to customize this controller
  */
 const populate = async (ctx) => {
-  await strapi.services.game.populate();
+  const options = {
+    sort: "popularity",
+    page: 1,
+    ...ctx.query,
+  };
+
+  await strapi.services.game.populate(options);
   ctx.send("Finished pupulating!");
 };
 
